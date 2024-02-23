@@ -1,9 +1,11 @@
 package dog
 
-func Bark(string bark) string {
-	return "Dog bark:" + bark.toUpperCase()
+import "strings"
+
+func Bark(bark string) string {
+	return "Dog bark:" + strings.ToUpper(bark)
 }
 
-func Barks(string barks) string {
-	return "Dogs bark:" + bark.toUpperCase()
+func Barks(barks string) string {
+	return "Dogs bark:" + strings.ToUpper(barks)
 }
